@@ -11,7 +11,7 @@ app.get('/api/freefire', async (req, res) => {
 
   try {
     // Replace this with your actual API logic or scraping
-    const response = await axios.get(`https://yourapi.com/${region}/${uid}`);
+    const response = await axios.get(`https://freefire-eila-nikz.onrender.com/${region}/${uid}`);
     res.json(response.data);
   } catch (error) {
     res.status(500).send('Error fetching data');
